@@ -2,7 +2,7 @@
   "name": "arbetsprov_internetmedia",
   "version": "1.0.0",
   "description": "medium story example",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pedric/arbetsprov_internetmedia.git"
