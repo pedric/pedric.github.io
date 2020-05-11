@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/pedric/pedric.github.io/issues"
   },
-  "homepage": "https://github.com/pedric/pedric.github.io#readme"
+  "homepage": "https://github.com/pedric/pedric.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+  }
 }
