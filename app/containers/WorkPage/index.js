@@ -12,6 +12,8 @@ import messages from './messages';
 
 export default function HomePage() {
   return (
+    <div>
     <Header />
+    </div>
   );
 }
