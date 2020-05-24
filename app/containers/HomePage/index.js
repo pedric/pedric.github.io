@@ -8,10 +8,17 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Header from 'components/Header';
+import Body from './Body';
+import Footer from 'components/Footer';
 import messages from './messages';
 
 export default function HomePage() {
+
   return (
-    <Header />
+    <div>
+      <Header />
+      <Body />
+      <Footer />
+    </div>
   );
 }

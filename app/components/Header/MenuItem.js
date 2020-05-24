@@ -3,9 +3,14 @@ import styled from 'styled-components';
 import HeaderLink from './HeaderLink'
 
 function MenuItem(props) {
+
+  const styles = {
+    'display': 'inline-block'
+  }
+
   return(
-    <li>
-        <HeaderLink to={props.target}>{props.name}</HeaderLink>
+    <li style={styles}>
+        <HeaderLink className={props.classes} to={props.target}>{props.name}</HeaderLink>
     </li>
   )
 }

@@ -5,8 +5,17 @@ import Logo from './Logo';
 import logo from './logo.svg';
 
 function Header() {
+
+  const styles = {
+    'padding': '20px',
+    'display': 'flex',
+    'justifyContent': 'flex-start',
+    'alignItems': 'center',
+    'flexWrap':'wrap'
+  }
+
   return(
-    <header>
+    <header style={styles}>
       <Logo className='logo' src={logo} alt='Hello Fredrik - Logo'/>
       <Menu />
     </header>

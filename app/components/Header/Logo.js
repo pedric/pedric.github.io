@@ -3,6 +3,7 @@ import Img from 'components/Img';
 
 const Logo = styled(Img)`
 max-width: 200px;
+padding: 0 50px 0 0;
 `;
 
 export default Logo;

@@ -12,7 +12,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import WorkPage from 'containers/workPage/Loadable';
+import WorkPage from 'containers/WorkPage/Loadable';
+import ShowPage from 'containers/ShowPage/Loadable';
+import TagPage from 'containers/TagPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
 
@@ -22,6 +24,8 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/work" component={WorkPage} />
+        <Route exact path="/work/:slug" component={ShowPage} />
+        <Route exact path="/tags/:slug" component={TagPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

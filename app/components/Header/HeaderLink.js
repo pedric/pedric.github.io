@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  color: purple;
+  color: #000;
   padding: 8px;
-  &:active {
-  color: red;
-  }
+  text-transform: uppercase;
+  text-decoration: none;
 `;

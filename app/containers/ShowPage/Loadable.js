@@ -1,5 +1,5 @@
 /**
- * Asynchronously loads the component for WorkPage
+ * Asynchronously loads the component for ShowPage
  */
 
 import loadable from 'utils/loadable';
