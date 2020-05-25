@@ -6,8 +6,8 @@ const MenuData = {
       'color':'#025D52'
     },
     {
-      'name': 'blog',
-      'target': '/blog',
+      'name': 'about',
+      'target': '/',
       'color':'#025D52'
     },
     {
@@ -16,42 +16,25 @@ const MenuData = {
       'color':'#025D52'
     }
   ],
-  'categoryMenu': [
-    {
-      'name': 'graphic design',
-      'target': '/work/graphic-design',
-      'color': '#D72C6D'
-    },
-    {
-      'name': 'illustration',
-      'target': '/work/illustration',
-      'color': '#D72C6D'
-    },
-    {
-      'name': 'art',
-      'target': '/work/art',
-      'color': '#D72C6D'
-    }
-  ],
   'externalMenu': [
     {
       'name': 'facebook',
-      'target': 'https://www.google.com',
+      'target': 'https://www.facebook.com/hellofredrik',
       'color': '#E8481D'
     },
     {
       'name': 'instagram',
-      'target': 'https://www.google.com',
+      'target': 'https://www.instagram.com/hellofredrik/',
       'color': '#E8481D'
     },
     {
       'name': 'linkedin',
-      'target': 'https://www.google.com',
+      'target': 'https://www.linkedin.com/in/johanfredriklarsson/',
       'color': '#E8481D'
     },
     {
       'name': 'github',
-      'target': 'https://www.google.com',
+      'target': 'https://github.com/pedric',
       'color': '#E8481D'
     }
   ]

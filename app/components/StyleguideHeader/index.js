@@ -7,23 +7,24 @@ import logo from './logo.svg';
 function Header() {
 
   const styles = {
-    'padding': '20px',
-    'display': 'flex',
-    'justifyContent': 'flex-start',
-    'alignItems': 'center',
-    'flexWrap':'wrap'
+    'padding': '0px',
+    'minWidth': '210px',
+    'flexBasis': '10%',
+    'maxWidth': '10%'
   }
 
   const linkStyles = {
-    'width': '200px'
+    'width': '210px'
   }
 
   return(
     <header style={styles}>
-      <a style={linkStyles} href='/'>
-        <Logo className='logo' src={logo} alt='Hello Fredrik - Logo'/>
-      </a>
-      <Menu />
+      <div>
+        <a style={linkStyles} href='/'>
+          <Logo className='logo' src={logo} alt='Hello Fredrik - Logo'/>
+        </a>
+        <Menu />
+      </div>
     </header>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import CategoryLink from './CategoryLink.js'
+import Thumbnail from './Thumbnail.js'
 import arrow from './arrow.svg'
 
 class ListCard extends React.Component {
@@ -19,10 +20,6 @@ class ListCard extends React.Component {
 
     const anchorStyles = {
       'textDecoration': 'none'
-    }
-
-    const imageStyles = {
-      'width': '100%'
     }
 
     const textWrapperStyles = {
@@ -78,7 +75,7 @@ class ListCard extends React.Component {
     return(
       <div style={wrapperStyles}>
         <a href={this.props.target}>
-          <img style={imageStyles} src={this.props.thumbnail} alt={this.props.title} />
+          <Thumbnail src={this.props.thumbnail} alt={this.props.title} type={this.props.type} />
         </a>
         <div style={textWrapperStyles}>
           <img style={iconStyles} src={arrow} alt='#' onClick={toggleDescription} />

@@ -13,7 +13,8 @@ function PortfolioItems() {
   <ListCard
   key={item.title}
   target={'work/'+item.slug}
-  thumbnail={item.thumbnail}
+  type={item.thumbnail.type}
+  thumbnail={item.thumbnail.media}
   title={item.title}
   description={item.description}
   categories={item.categories}

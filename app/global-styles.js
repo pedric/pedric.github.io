@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f6f6f6;
   }
 
   body {
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 60px;
   }
 
-  #app {
+  .app-wrapper {
     min-height: 100%;
     max-width: 1200px;
     margin: 0 auto;

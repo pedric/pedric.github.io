@@ -2,8 +2,8 @@ import React from 'react'
 import Works from 'data/Works.js'
 import Header from 'components/Header';
 import ArticleMeta from './ArticleMeta.js';
-import BigImage from './BigImage.js';
-import SmallImage from './SmallImage.js';
+import BigMedia from './BigMedia.js';
+import SmallMedia from './SmallMedia.js';
 import Paragraph from './Paragraph.js';
 import Blockquote from './Blockquote.js';
 import Preamble from './Preamble.js';
@@ -25,22 +25,22 @@ export default function ShowPage(props) {
     // 'minWidth': '400px'
   }
 
-  const bigImage = itemToPresent.bigImage.map(item =>
-    <BigImage key={item.alt} url={item.image} alt={item.alt} byline={item.byline} />
+  const bigMedia = itemToPresent.bigMedia.map(item =>
+    <BigMedia key={item.alt} url={item.image} alt={item.alt} byline={item.byline} type={item.mediaType} video={item.video+'?rel=0&amp;autoplay=1&mute=1'} />
   )
 
   const paragraphs = itemToPresent.paragraphs.map(item =>
     <Paragraph key={item} text={item} />
   )
 
-  const smallImages = itemToPresent.smallImages.map(item =>
-    <SmallImage key={item.alt} url={item.image} alt={item.alt} byline={item.byline} />
+  const smallMedia = itemToPresent.smallMedia.map(item =>
+    <SmallMedia key={item.alt} url={item.image} alt={item.alt} byline={item.byline} type={item.mediaType} video={item.video} />
   )
 
-  console.log(itemToPresent.bigImage)
+  console.log(itemToPresent.bigMedia)
 
   return(
-    <div>
+    <div className='app-wrapper'>
       <Header />
       <div style={wrapperStyles}>
         <div className='media-container media-container--body' style={containerStyles}>
@@ -51,10 +51,10 @@ export default function ShowPage(props) {
           {paragraphs}
           <Blockquote quote={itemToPresent.smallQuote} />
         </div>
-        {bigImage}
+        {bigMedia}
       </div>
       <div style={wrapperStyles}>
-        {smallImages}
+        {smallMedia}
       </div>
       <Footer />
     </div>

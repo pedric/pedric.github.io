@@ -15,7 +15,8 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import WorkPage from 'containers/WorkPage/Loadable';
 import ShowPage from 'containers/ShowPage/Loadable';
 import TagPage from 'containers/TagPage/Loadable';
-
+import StyleguidePage from 'containers/StyleguidePage/Loadable';
+import BlogPage from 'containers/BlogPage/Loadable';
 import GlobalStyle from '../../global-styles';
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
         <Route exact path="/work" component={WorkPage} />
         <Route exact path="/work/:slug" component={ShowPage} />
         <Route exact path="/tags/:slug" component={TagPage} />
+        <Route exact path="/styleguide" component={StyleguidePage} />
+        <Route exact path="/styleguide/:slug" component={StyleguidePage} />
+        <Route exact path="/blog" component={BlogPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

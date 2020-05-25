@@ -1,5 +1,5 @@
 /*
- * HomePage
+ * BlogPage
  *
  * This is the first thing users see of our App, at the '/' route
  *
@@ -8,14 +8,13 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Header from 'components/Header';
-import Body from './Body';
+import Body from './Body.js';
 import Footer from 'components/Footer';
-import messages from './messages';
 
-export default function HomePage() {
+export default function BlogPage() {
 
   return (
-    <div className='app-wrapper'>
+    <div>
       <Header />
       <Body />
       <Footer />

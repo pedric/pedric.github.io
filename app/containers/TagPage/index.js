@@ -33,7 +33,7 @@ export default function TagPage(props) {
   }
 
   return (
-    <div>
+    <div className='app-wrapper'>
       <Header />
       <div style={headingSpacer}>
         <Heading heading={heading} />

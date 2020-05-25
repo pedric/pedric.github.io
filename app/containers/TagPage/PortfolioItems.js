@@ -12,8 +12,9 @@ function PortfolioItems(props) {
   const items = props.items.map(item =>
   <ListCard
   key={item.title}
-  target={item.slug}
-  thumbnail={item.thumbnail}
+  target={'../work/'+item.slug}
+  type={item.thumbnail.type}
+  thumbnail={item.thumbnail.media}
   title={item.title}
   description={item.description}
   categories={item.categories}

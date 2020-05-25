@@ -14,7 +14,7 @@ import messages from './messages';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className='app-wrapper'>
       <Header />
       <PortfolioItems />
       <Footer />
