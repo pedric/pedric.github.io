@@ -16,7 +16,8 @@ function BigMedia(props) {
   const bylineStyles = {
     'display': 'block',
     'fontSize': '12px',
-    'fontWeight': '200'
+    'fontWeight': '200',
+    'padding': '0 4px 4px 4px'
   }
 
   const iframeStyles = {

@@ -1,5 +1,5 @@
 import React from 'react'
-import CategoryLink from './CategoryLink.js'
+import CategoryLink from 'components/CategoryLink'
 
 function ArticleMeta(props) {
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import Works from 'data/Works.js'
 import Header from 'components/Header';
 import ArticleMeta from './ArticleMeta.js';
@@ -9,6 +10,7 @@ import Blockquote from './Blockquote.js';
 import Preamble from './Preamble.js';
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
+import Logo from 'images/logo/logo_stacked.png'
 
 export default function ShowPage(props) {
 
@@ -25,6 +27,14 @@ export default function ShowPage(props) {
     // 'minWidth': '400px'
   }
 
+  let image = itemToPresent.bigMedia.find(item =>
+    item.mediaType == 'image'
+  )
+
+  const OgTitle = itemToPresent.title
+  const OgDescription = itemToPresent.description
+  const OgImage = image && image['image'] ? image['image'] : Logo
+
   const bigMedia = itemToPresent.bigMedia.map(item =>
     <BigMedia key={item.alt} url={item.image} alt={item.alt} byline={item.byline} type={item.mediaType} video={item.video+'?rel=0&amp;autoplay=1&mute=1'} />
   )
@@ -37,10 +47,14 @@ export default function ShowPage(props) {
     <SmallMedia key={item.alt} url={item.image} alt={item.alt} byline={item.byline} type={item.mediaType} video={item.video} />
   )
 
-  console.log(itemToPresent.bigMedia)
-
   return(
     <div className='app-wrapper'>
+      <Helmet>
+        <title>{'Hello Fredrik - '+itemToPresent.heading}</title>
+        <meta property="og:title" content={'Hello Fredrik - '+OgTitle} />
+        <meta property="og:description" content={OgDescription} />
+        <meta property="og:image" content={OgImage} />
+      </Helmet>
       <Header />
       <div style={wrapperStyles}>
         <div className='media-container media-container--body' style={containerStyles}>

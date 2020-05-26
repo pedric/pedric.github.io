@@ -8,10 +8,12 @@ function Menu(props) {
   function isActive(item) {
     if (item.target === window.location.pathname) {
       item.active = 'active'
+    } else {
+      item.active = 'not-active'
     }
   }
 
-  let test = MenuData.find(isActive)
+  MenuData.find(isActive)
 
   const items = MenuData.map(item =>
     <MenuItem
@@ -25,9 +27,9 @@ function Menu(props) {
     'listStyle': 'none',
     'padding': '0',
     'minWidth': '250px',
-    'background': 'transparent linear-gradient(270deg, #E8481D 0%, #D72C6D 50%, #045569 100%) 0% 0% no-repeat padding-box',
-    'WebkitBackgroundClip': 'text',
-    'WebkitTextFillColor': 'transparent'
+    // 'background': 'transparent linear-gradient(270deg, #E8481D 0%, #D72C6D 50%, #045569 100%) 0% 0% no-repeat padding-box',
+    // 'WebkitBackgroundClip': 'text',
+    // 'WebkitTextFillColor': 'transparent'
   }
 
   return(

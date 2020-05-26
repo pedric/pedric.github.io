@@ -4,12 +4,10 @@ import HeaderLink from './HeaderLink'
 
 function MenuItem(props) {
 
-  const styles = {
-    // 'display': 'inline-block'
-  }
+console.log(props)
 
   return(
-    <li style={styles}>
+    <li>
         <HeaderLink className={props.classes} to={props.target}>{props.name}</HeaderLink>
     </li>
   )

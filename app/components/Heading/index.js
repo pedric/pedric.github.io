@@ -4,7 +4,7 @@ function Heading(props) {
 
   const styles = {
     'fontSize': '20px',
-    // 'paddingLeft': '20px'
+    'textTransform': 'capitalize'
   }
 
   return (

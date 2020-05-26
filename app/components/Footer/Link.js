@@ -7,7 +7,7 @@ function Link(props){
     'color': props.color
   }
   return(
-    <a style={styles} href={props.target}>{props.name}</a>
+    <a className={props.classes} style={styles} href={props.target}>{props.name}</a>
   )
 }
 

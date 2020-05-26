@@ -1,5 +1,5 @@
 import React from 'react'
-import CategoryLink from './CategoryLink.js'
+import CategoryLink from 'components/CategoryLink'
 import Thumbnail from './Thumbnail.js'
 import arrow from './arrow.svg'
 
@@ -35,7 +35,8 @@ class ListCard extends React.Component {
       'top': '0',
       'right': '0',
       'width': '30px',
-      'padding': '4px'
+      'padding': '4px',
+      'transition': 'all 50ms ease-in-out'
     }
 
     const headingStyles = {
@@ -60,7 +61,7 @@ class ListCard extends React.Component {
     }
 
     const categories = this.props.categories.map(item =>
-      <CategoryLink key={item} name={item} target={'../tags/'+item} />
+      <CategoryLink key={item} name={item} target={window.location.origin+'/tags/'+item} />
     )
 
     function toggleDescription(e){
@@ -77,7 +78,7 @@ class ListCard extends React.Component {
     }
 
     return(
-      <div style={wrapperStyles}>
+      <div className="listcard" style={wrapperStyles}>
         <a href={this.props.target}>
           <Thumbnail src={this.props.thumbnail} alt={this.props.title} type={this.props.type} />
         </a>

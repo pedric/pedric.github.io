@@ -14,7 +14,7 @@ function Footer(props){
       for(let j=0;j<Works[i].categories.length;j++){
         if(!temp.find(element => element === Works[i].categories[j])) {
           let tag = Works[i].categories[j]
-          let menuPost = {'name': tag, 'target': 'tags/'+tag, 'color': '#D72C6D'}
+          let menuPost = {'name': tag, 'target': window.location.origin+'/tags/'+tag, 'color': '#D72C6D'}
           temp.push(tag)
           tags.push(menuPost)
         }
@@ -30,7 +30,8 @@ function Footer(props){
     'position':'relative',
     'display': 'flex',
     'justifyContent': 'flex-start',
-    'flexWrap':'wrap'
+    'flexWrap':'wrap',
+    'marginTop': '80px'
   }
 
   return(

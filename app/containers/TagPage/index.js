@@ -7,11 +7,13 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { Helmet } from 'react-helmet';
 import Header from 'components/Header';
 import PortfolioItems from './PortfolioItems.js';
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
 import Works from 'data/Works.js'
+import Logo from 'images/logo/logo_stacked.png'
 import messages from './messages';
 
 export default function TagPage(props) {
@@ -34,6 +36,12 @@ export default function TagPage(props) {
 
   return (
     <div className='app-wrapper'>
+      <Helmet>
+        <title>{'Hello Fredrik - '+heading}</title>
+        <meta property="og:title" content={'Hello Fredrik - '+heading} />
+        <meta property="og:description" content={'Conted sorted by '+heading} />
+        <meta property="og:image" content={Logo} />
+      </Helmet>
       <Header />
       <div style={headingSpacer}>
         <Heading heading={heading} />

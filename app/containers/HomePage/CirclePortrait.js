@@ -4,7 +4,7 @@ import Portrait from './Portrait.jpg'
 function CirclePortrait(){
 
   const styles = {
-    'maxHeight' : '60px',
+    'maxHeight' : '50px',
     'borderRadius': '50%'
   }
   return(

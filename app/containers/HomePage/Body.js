@@ -1,12 +1,16 @@
 import React from 'react'
 import CirclePortrait from './CirclePortrait'
 import Works from 'data/Works.js'
-import CategoryLink from './CategoryLink.js'
+import CategoryLink from 'components/CategoryLink'
 
 function Body() {
 
   const styles = {
     'padding': '20px 20px 200px 20px'
+  }
+
+  const headingStyles = {
+    'fontSize': '50px'
   }
 
   let links = [];
@@ -29,8 +33,8 @@ function Body() {
 
   return(
     <div style={styles}>
-      <h1>Hello. I’m Fredrik (<CirclePortrait />),<br/>I build user interfaces.</h1>
-      <p>I also <CategoryLink key='work-inline-link' target='/work' name='work' /> with{mappedLinks}.</p>
+      <h1 style={headingStyles}>Hello. I’m Fredrik (<CirclePortrait />),<br/>I build user interfaces.</h1>
+      <p>I also <CategoryLink key='work-inline-link' target='/work' name='work' /> with{mappedLinks}</p>
       <p>My tools are HTML, CSS, JavaScript, React, PHP, Adobe CC, Git, Pencil and paper.</p>
       <p>Say hello using <a href="mailto:hello.fredrik.larsson@gmail.com">hello.fredrik.larsson@gmail.com</a></p>
     </div>

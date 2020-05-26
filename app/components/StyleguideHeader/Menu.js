@@ -5,18 +5,22 @@ import StyleguideData from 'data/styleguideData.js';
 
 function Menu(props) {
 
-  function isActive(item) {
-    if (item.target === window.location.pathname) {
-      item.active = 'active'
-    }
-  }
+  // function isActive(item) {
+  //   if (item.target === window.location.pathname) {
+  //     item.active = 'active'
+  //   } else {
+  //     item.active = 'not-active'
+  //   }
+  // }
+  //
+  // StyleguideData.find(isActive)
 
   const items = StyleguideData.map(item =>
     <MenuItem
     key={item.section}
     name={item.section}
     target={'styleguide/'+item.section}
-    classes='styleguide-link'/>
+    classes='styleguide-link '/>
   )
 
   const styles = {

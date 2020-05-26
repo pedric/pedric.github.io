@@ -3,6 +3,16 @@ import MenuItem from './MenuItem'
 
 function Menu(props){
 
+  function isActive(item) {
+    if (item.target === window.location.pathname) {
+      item.active = 'active'
+    } else {
+      item.active = 'not-active'
+    }
+  }
+
+  props.items.find(isActive)
+
   const styles = {
     'listStyle': 'none',
     'textTransform': 'uppercase',
@@ -18,7 +28,8 @@ function Menu(props){
     key={item.name}
     name={item.name}
     target={item.target}
-    color={item.color}/>
+    color={item.color}
+    classes={item.active}/>
   )
 
   return(

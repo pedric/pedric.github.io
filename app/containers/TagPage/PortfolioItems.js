@@ -12,7 +12,7 @@ function PortfolioItems(props) {
   const items = props.items.map(item =>
   <ListCard
   key={item.title}
-  target={'../work/'+item.slug}
+  target={window.location.origin+'/work/'+item.slug}
   type={item.thumbnail.type}
   thumbnail={item.thumbnail.media}
   title={item.title}
