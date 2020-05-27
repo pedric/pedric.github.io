@@ -1,7 +1,11 @@
+// self image
 import CameraThumb from 'images/self-image/thumbnail.jpg';
 import Camera from 'images/self-image/1.jpg';
 import Phone from 'images/self-image/2.jpg';
 import Knife from 'images/self-image/3.jpg';
+import SelfImage5 from 'images/self-image/5.jpg';
+import SelfImage6 from 'images/self-image/6.jpg';
+// tuk tuk
 import Tuktuk from 'images/tuk-tuk/1.png';
 import TuktukAnimation from 'images/tuk-tuk/animated.gif';
 import TuktukThumb from 'images/tuk-tuk/thumbnail.gif';
@@ -19,6 +23,10 @@ import Organic1 from 'images/organic-patterns/1.jpg';
 import Organic2 from 'images/organic-patterns/2.jpg';
 import Organic3 from 'images/organic-patterns/3.jpg';
 import Organic4 from 'images/organic-patterns/4.jpg';
+import Organic5 from 'images/organic-patterns/5.jpg';
+import Organic6 from 'images/organic-patterns/6.jpg';
+import Organic7 from 'images/organic-patterns/7.jpg';
+import Organic8 from 'images/organic-patterns/8.jpg';
 import OrganicThumbnail from 'images/organic-patterns/thumbnail.jpg';
 // bergstroms el
 import Bel1 from 'images/bergstroms-el/1.png'
@@ -32,6 +40,14 @@ import CityFishing1 from 'images/city-fishing/1.png'
 import CityFishing2 from 'images/city-fishing/2.png'
 import CityFishing3 from 'images/city-fishing/3.png'
 import CityFishingThumbnail from 'images/city-fishing/thumbnail.png'
+// unframed portraits
+import Unframed1 from 'images/unframed-portraits/1.jpg'
+import Unframed2 from 'images/unframed-portraits/2.jpg'
+import Unframed3 from 'images/unframed-portraits/3.jpg'
+import Unframed4 from 'images/unframed-portraits/4.jpg'
+import Unframed5 from 'images/unframed-portraits/5.jpg'
+import UnframedThumbnail from 'images/unframed-portraits/thumbnail.jpg'
+
 
 const Works = [
   {
@@ -68,6 +84,18 @@ const Works = [
         'image': Phone,
         'alt': 'Phone melted in the owen',
         'byline': 'Phone melted in the owen'
+      },
+      {
+        'mediaType': 'image',
+        'image': SelfImage5,
+        'alt': '',
+        'byline': ''
+      },
+      {
+        'mediaType': 'image',
+        'image': SelfImage6,
+        'alt': '',
+        'byline': ''
       }
     ],
     'heading': 'Artistic research of the self-image',
@@ -146,9 +174,12 @@ const Works = [
     'preamble': 'This font project saved me a lot of time by the scanner.',
     'paragraphs': [
       'I wanted to try making my own font for a while. When a client who had my hand-writing style in the logo kept change it I felt like I had a reason doing my handwriting as a font.',
-      'Feel free to use it, you can find it at https://github.com/pedric/handwriting-font.'
     ],
-    'smallQuote': ''
+    'smallQuote': '',
+    'link': {
+      'url': 'https://github.com/pedric/handwriting-font',
+      'text': 'Download font'
+    }
   },
   {
     'id':'4',
@@ -160,7 +191,7 @@ const Works = [
       'media': MedskogsThumbnail
     },
     'slug': 'the-mountain-farmer-from-medskogen',
-    'categories': ['graphic-design', 'illustration'],
+    'categories': ['graphic-design', 'illustration', 'website'],
     'bigVideo': [
       {}
     ],
@@ -198,7 +229,11 @@ const Works = [
     'paragraphs': [
       'I started the process by drawing artefacts used for "old-school" cheese production, mostly to get started somewhere. After doing some drawings I realized that they could be used as a collage to put the logo together. Since I wanted everything to be handmade the text and images were hand drawn and scanned. After a lot of remakes I made a font to use for the future.',
     ],
-    'smallQuote': ''
+    'smallQuote': '',
+    'link': {
+      'url': 'http://fjallbonden.se/',
+      'text': 'fjallbonden.se'
+    }
   },
   {
     'id':'5',
@@ -240,6 +275,30 @@ const Works = [
         'image': Organic4,
         'alt': 'Organic pattern',
         'byline': ''
+      },
+      {
+        'mediaType': 'image',
+        'image': Organic5,
+        'alt': 'Organic pattern',
+        'byline': ''
+      },
+      {
+        'mediaType': 'image',
+        'image': Organic6,
+        'alt': 'Organic pattern',
+        'byline': ''
+      },
+      {
+        'mediaType': 'image',
+        'image': Organic7,
+        'alt': 'Organic pattern',
+        'byline': ''
+      },
+      {
+        'mediaType': 'image',
+        'image': Organic8,
+        'alt': 'Organic pattern',
+        'byline': 'Under the Blackeberg bridge'
       }
     ],
     'heading': 'Organic patterns in urban spaces',
@@ -292,7 +351,7 @@ const Works = [
       'media': 'https://www.youtube.com/embed/KvzZXC_vR6s?rel=0&amp;autoplay=1&mute=1&controls=0&start=10&loop=1&vq=tiny'
     },
     'slug': 'visit-sveg',
-    'categories': ['video', 'ux-design'],
+    'categories': ['video', 'ux-design', 'website'],
     'bigVideo': [
       {}
     ],
@@ -311,7 +370,11 @@ const Works = [
     'paragraphs': [
       'It began with a long collaboration to produce for print media. The project had a limited lifespan. By creating this site we provided a platform to communicate through which replaced much printed information. The content is held up to date cheaper than making prints. Visit Sveg at visitsveg.com :)',
     ],
-    'smallQuote': ''
+    'smallQuote': '',
+    'link': {
+      'url': 'http://www.visitsveg.com/',
+      'text': 'Visit website'
+    }
   },
   {
     'id':'5',
@@ -449,6 +512,63 @@ const Works = [
     'preamble': 'Logo design for an urban fishing project.',
     'paragraphs': [
       'One of many events or small projects aside Visit Sveg.'
+    ],
+    'smallQuote': ''
+  },
+  {
+    'id':'10',
+    'author': 'Fredrik Larsson',
+    'title': 'Unframed Portraits',
+    'description': 'A conceptual painting project.',
+    'thumbnail': {
+      'type': 'image',
+      'media': UnframedThumbnail
+    },
+    'slug': 'unframed-portraits',
+    'categories': ['art'],
+    'bigVideo': [
+      {}
+    ],
+    'bigMedia': [
+      {
+        'mediaType': 'image',
+        'image': Unframed1,
+        'alt': 'Portrait of the swedish queen.',
+        'byline': 'Portrait of the swedish queen.'
+      }
+    ],
+    'smallMedia': [
+      {
+        'mediaType': 'image',
+        'image': Unframed2,
+        'alt': 'Portrait of the swedish king.',
+        'byline': 'Portrait of the swedish king.'
+      },
+      {
+        'mediaType': 'image',
+        'image': Unframed3,
+        'alt': 'Swedish politics',
+        'byline': 'Swedish politics'
+      },
+      {
+        'mediaType': 'image',
+        'image': Unframed4,
+        'alt': 'Totally deconstructed portrait, I can not remember who hides behind this act.',
+        'byline': 'Totally deconstructed portrait, I can not remember who hides behind this act.'
+      },
+      {
+        'mediaType': 'image',
+        'image': Unframed5,
+        'alt': 'Totally deconstructed portrait, I can not remember who hides behind this act.',
+        'byline': 'Totally deconstructed portrait, I can not remember who hides behind this act.'
+      }
+
+    ],
+    'heading': 'Unframing',
+    'quote': 'The questions of where-, what- and by who paint can be applied.',
+    'preamble': 'Conceptual painting.',
+    'paragraphs': [
+      'A lot of work around this time (2014ish) in the studio discussed the questions of where-, what- and by who paint can be applied.',
     ],
     'smallQuote': ''
   }

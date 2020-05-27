@@ -12,6 +12,27 @@ function ArticleMeta(props) {
     'textDecoration': 'none'
   }
 
+  const spacerStyles = {
+    'padding': '4px 8px',
+    // 'margin': '0 2px 0 0',
+    'fontSize': '14px',
+    'fontWeight': '100',
+    'color': '#e3e3e3'
+  }
+
+  const buttonStyles = {
+    'margin': '0 2px 0 0',
+    'textDecoration': 'none',
+    'fontSize': '14px',
+    'borderRadius': '20px',
+    'fontWeight': '100',
+    // button styles
+    // 'color': '#000',
+    // 'padding': '4px 8px',
+    // 'border': '1px solid #000',
+    // 'background': '#e3e3e3',
+  }
+
   const totalText = props.paragraphs.join(' ')
 
   const readtime = Math.ceil(totalText.split(' ').length / 150)
@@ -20,15 +41,29 @@ function ArticleMeta(props) {
     <CategoryLink key={item} name={item} target={'../tags/'+item} />
   )
 
-  return(
-    <div>
-    <span>{categories}</span>
-    <span> </span>
-    <span style={styles}>{readtime} min read</span>
-    <span> </span>
-    <span style={styles}>{props.author}</span>
-    </div>
-  )
+  if(props.button){
+    return(
+      <div>
+        <span>{categories}</span>
+        <span style={spacerStyles}>|</span>
+        <span style={styles}>{readtime} min read</span>
+        <span style={spacerStyles}>|</span>
+        <span style={styles}>{props.author}</span>
+        <span style={spacerStyles}>|</span>
+        <span style={styles}><a style={buttonStyles} href={props.button.url} target="_blank">{props.button.text}</a></span>
+      </div>
+    )
+  } else {
+    return(
+      <div>
+        <span>{categories}</span>
+        <span style={spacerStyles}>|</span>
+        <span style={styles}>{readtime} min read</span>
+        <span style={spacerStyles}>|</span>
+        <span style={styles}>{props.author}</span>
+      </div>
+    )
+  }
 }
 
 export default ArticleMeta

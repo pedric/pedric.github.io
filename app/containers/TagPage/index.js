@@ -40,7 +40,7 @@ export default function TagPage(props) {
         <title>{'Hello Fredrik - '+heading}</title>
         <meta property="og:title" content={'Hello Fredrik - '+heading} />
         <meta property="og:description" content={'Conted sorted by '+heading} />
-        <meta property="og:image" content={Logo} />
+        <meta property="og:image" content={window.location.origin+Logo} />
       </Helmet>
       <Header />
       <div style={headingSpacer}>

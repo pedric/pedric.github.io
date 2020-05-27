@@ -20,7 +20,7 @@ export default function WorkPage() {
       <Helmet>
         <meta property="og:title" content="Hello Fredrik - All the stuff" />
         <meta property="og:description" content="" />
-        <meta property="og:image" content={Logo} />
+        <meta property="og:image" content={window.location.origin+Logo} />
       </Helmet>
       <Header />
       <PortfolioItems />

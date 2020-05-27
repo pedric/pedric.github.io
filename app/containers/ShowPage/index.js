@@ -53,14 +53,14 @@ export default function ShowPage(props) {
         <title>{'Hello Fredrik - '+itemToPresent.heading}</title>
         <meta property="og:title" content={'Hello Fredrik - '+OgTitle} />
         <meta property="og:description" content={OgDescription} />
-        <meta property="og:image" content={OgImage} />
+        <meta property="og:image" content={window.location.origin+OgImage} />
       </Helmet>
       <Header />
       <div style={wrapperStyles}>
         <div className='media-container media-container--body' style={containerStyles}>
           <Blockquote quote={itemToPresent.quote} />
           <Preamble preamble={itemToPresent.preamble} />
-          <ArticleMeta categories={itemToPresent.categories} paragraphs={itemToPresent.paragraphs} author={itemToPresent.author} />
+          <ArticleMeta categories={itemToPresent.categories} paragraphs={itemToPresent.paragraphs} author={itemToPresent.author} button={itemToPresent.link} />
           <Heading heading={itemToPresent.heading} />
           {paragraphs}
           <Blockquote quote={itemToPresent.smallQuote} />
