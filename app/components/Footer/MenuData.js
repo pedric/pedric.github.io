@@ -11,12 +11,6 @@ const MenuData = {
       'target': '/',
       'color':'#025D52',
       'active': 'not-active'
-    },
-    {
-      'name': 'styleguide',
-      'target': '/styleguide',
-      'color':'#025D52',
-      'active': 'not-active'
     }
   ],
   'externalMenu': [
