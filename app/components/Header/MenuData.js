@@ -8,11 +8,6 @@ const MenuData = [
     'name': 'about',
     'target': '/',
     'active': 'not-active'
-  },
-  {
-    'name': 'styleguide',
-    'target': '/styleguide',
-    'active': 'not-active'
   }
 ]
 
