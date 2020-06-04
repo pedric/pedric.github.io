@@ -39,7 +39,7 @@ class StyleguidePage extends React.Component {
     return (
       <div className='app-wrapper'>
         <Header />
-        <Body item={pageToPresent} title={pageToPresent.section} />
+        <Body key={'styleguideBody'} item={pageToPresent} title={pageToPresent.section} />
         <Footer />
       </div>
     )

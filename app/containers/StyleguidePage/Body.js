@@ -32,27 +32,27 @@ function Body(props) {
     }
 
     if(blocks[i].preamble){
-      let element = <Preamble content={blocks[i].preamble}/>
+      let element = <Preamble key={'preamble_'+i} content={blocks[i].preamble}/>
       content.push(element)
     }
 
     if(blocks[i].paragraphs){
       let element = blocks[i].paragraphs.map( paragraph =>
-          <Paragraph content={paragraph} />
+          <Paragraph key={'paragraph_'+i} content={paragraph} />
       )
       content.push(element)
     }
 
     if(blocks[i].media){
       let element = blocks[i].media.map( item =>
-        <Media type={item.type} item={item.item} alt={item.alt} byline={item.byline} />
+        <Media key={item.alt} type={item.type} item={item.item} alt={item.alt} byline={item.byline} />
       )
       content.push(element)
     }
 
     if(blocks[i].palettes){
       let element = blocks[i].palettes.map( item =>
-        <Palette name={item.name} color={item.color} dark={item.dark} neutral={item.neutral} light={item.light} />
+        <Palette key={item.name} name={item.name} color={item.color} dark={item.dark} neutral={item.neutral} light={item.light} />
       )
       content.push(element)
     }

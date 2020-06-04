@@ -22,7 +22,7 @@ export default function HomePage() {
         <title>{'Hello Fredrik'}</title>
         <meta property="og:title" content="Hello. I’m Fredrik, I build user interfaces." />
         <meta property="og:description" content="My tools are HTML, CSS, JavaScript, React, PHP, Adobe CC, Git, Pencil and paper." />
-        <meta property="og:image" content={Logo} />
+        <meta property="og:image" content={window.location.origin+Logo} />
       </Helmet>
       <Header />
       <Body />
