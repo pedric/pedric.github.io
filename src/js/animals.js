@@ -1,16 +1,25 @@
+import monkey from '../images/monkey.png';
+import cat from '../images/cat.png';
+import beaver from '../images/beaver.png';
 
 const animals = [
   {
-    src:"https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2486&q=80",
+    src:cat,
+    alt:"cats",
+    title:"kitten",
+    modifier: ""
+  },
+  {
+    src:monkey,
     alt:"cats",
     title:"kitten",
     modifier: "big"
   },
   {
-    src:"https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2486&q=80",
+    src:beaver,
     alt:"cats",
     title:"kitten",
-    modifier: "big"
+    modifier: ""
   }
 ]
 

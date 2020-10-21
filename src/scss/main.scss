@@ -1,15 +1,17 @@
+@import 'animations.scss';
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
 }
 
 #app {
-  position: relative;
+  position: absolute;
   min-height: 100vh;
   min-width: 100vw;
-  background-image: url(../images/malmo.jpg);
+  // background-image: url(../images/malmo.jpg);
   background-size: cover;
-    background-position: center;
+  background-position: center;
 }
 
 .animal {
@@ -26,7 +28,6 @@ body {
   }
 }
 
-
 .logo-container {
-  min-width: 50%;
+  min-width: 33%;
 }
