@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+#app {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(../images/malmo.jpg);
+  background-size: cover;
+    background-position: center;
+}
+
+.animal {
+  position: absolute;
+  max-width: 300px;
+  transform: translate(-50%,-50%);
+
+  &.big {
+    max-width: 500px;
+  }
+
+  &.small {
+    max-width: 200px;
+  }
+}
+
+
+.logo-container {
+  min-width: 50%;
+}

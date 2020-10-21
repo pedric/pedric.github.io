@@ -1,1 +1,3 @@
-cred to <a href="https://github.com/react-boilerplate/">https://github.com/react-boilerplate/</a>
+# Frontend dev env.
+
+A frontend boilerplate based on webpack, babel and react.
