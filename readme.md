@@ -1,2 +1,1 @@
-
-Service worker lab
+# Service worker lab

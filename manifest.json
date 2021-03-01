@@ -1,0 +1,16 @@
+{
+  "name": "PWA Ninja Test",
+  "short_name": "FL PWA",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFE9D2",
+  "theme_color": "#FFE1C4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ]
+}
